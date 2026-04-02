@@ -17,11 +17,11 @@ Route::prefix('admin')->group(function () {
     Route::post('/portofolio/store', [PortofolioController::class, 'store']);
 
     // Form edit data
-    Route::get('/portofolio/edit{id}', [PortofolioController::class, 'edit']);
+    Route::get('/portofolio/edit/{id}', [PortofolioController::class, 'edit']);
 
     // Update data
-    Route::post('/portofolio/update{id}', [PortofolioController::class, 'update']);
+    Route::post('/portofolio/update/{id}', [PortofolioController::class, 'update']);
 
     // Menghapus data
-    Route::delete('/portofolio/delete{id}', [PortofolioController::class, 'delete']);
+    Route::delete('/portofolio/delete/{id}', [PortofolioController::class, 'delete']);
 });
