@@ -14,7 +14,7 @@ Route::prefix('admin')->group(function () {
     Route::get('/portofolio/create', [PortofolioController::class, 'create']);
 
     // Simpan data
-    Route::post('portofolio/store', [PortofolioController::class. 'store']);
+    Route::post('/portofolio/store', [PortofolioController::class, 'store']);
 
     // Form edit data
     Route::get('/portofolio/edit{id}', [PortofolioController::class, 'edit']);
