@@ -14,6 +14,25 @@ class PortofolioController extends Controller
         return view('home', compact('data'));
     }
 
+    // Halaman about
+    public function about()
+    {
+        return view('about');
+    }
+
+    // Halaman portofolio
+    public function portofolio()
+    {
+        $data = Portofolio::all();
+        return view('portofolio', compact('data'));
+    }
+
+    // Halaman Contact
+    public function contact()
+    {
+        return view('contact');
+    }
+
     // Menampilkan data di halaman admin
     public function adminIndex()
     {
