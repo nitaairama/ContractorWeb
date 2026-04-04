@@ -3,7 +3,19 @@
 use App\Http\Controllers\PortofolioController;
 
 // Route publik
-Route::get('/', [PortofolioController::class, 'index']);
+Route::prefix('public')->group(function () {
+    // Home
+    Route::get('/', [PortofolioController::class, 'index']);
+
+    // About
+    Route::get('/about', [PortofolioController::class, 'about']);
+
+    // Portofolio
+    Route::get('/portofolio', [PortofolioController::class, 'portofolio']);
+
+    // Contact
+    Route::get('/contact', [PortofolioController::class, 'contact']);
+});
 
 // Route admin
 Route::prefix('admin')->group(function () {
