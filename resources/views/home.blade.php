@@ -1,138 +1,799 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('partials.head')
-
+  @include('partials.head')
+  <title>Orbit - Homepage</title>
 <body class="index-page">
-    @include('partials.header')
-
+  @include('partials.header')
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <h1>Better Solutions For Your Business</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="hero-content">
+              <div class="hero-tag" data-aos="fade-up" data-aos-delay="250">
+                <span class="tag-dot"></span>
+                <span class="tag-text">Premium Digital Solutions</span>
+              </div>
+              <h1 class="hero-headline" data-aos="fade-up" data-aos-delay="300">Crafting Exceptional Digital Experiences</h1>
+              <p class="hero-text" data-aos="fade-up" data-aos-delay="350">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae ultricies eget.</p>
+              <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="#services" class="cta-button">
+                  <span>Explore Services</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="{{ asset('assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
-          </div>
-        </div>
       </div>
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
-      <div class="container" data-aos="zoom-in">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 120
-                },
-                "1200": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-1.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-2.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-3.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-4.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-5.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-6.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-7.webp') }}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{{ asset('assets/img/clients/clients-8.webp') }}" class="img-fluid" alt=""></div>
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 align-items-center">
+
+          <!-- Left Side -->
+          <div class="col-xl-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-images-wrapper">
+              <div class="image-main">
+                <img src="assets/img/about/about-5.webp" alt="Business meeting" class="img-fluid">
+              </div>
+              <div class="image-offset">
+                <img src="assets/img/about/about-square-3.webp" alt="Detail shot" class="img-fluid">
+              </div>
+              <div class="experience-badge">
+                <span class="years purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1">10</span>
+                <span class="text">Years of<br>Excellence</span>
+              </div>
+              <div class="shape-pattern"></div>
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-xl-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-subtitle">Who We Are</div>
+              <h2>Innovating for Your Success Through Technology</h2>
+              <p class="lead-text">
+                Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+              <p class="mb-4 description">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci.
+              </p>
+              <!-- Features Grid -->
+              <div class="features-grid">
+                <div class="feature-card">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Fast Delivery</span>
+                </div>
+                <div class="feature-card">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Quality Assured</span>
+                </div>
+                <div class="feature-card">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Expert Team</span>
+                </div>
+                <div class="feature-card">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>24/7 Support</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section><!-- /Clients Section -->
+    </section>
 
     <!-- Services Section -->
-    <section id="services" class="services section light-background">
-      <!-- Section Title -->
+    <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      <!-- Service Card -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          <!-- Service Card 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <h3>Strategic Consulting</h3>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Discover More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Growth Analytics</h3>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Discover More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          </div>
+          <!-- Service Card 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h3>Creative Design</h3>
+              <p>Praesent commodo cursus magna vel scelerisque nisl consectetur et vivamus sagittis.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Discover More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+          <!-- Service Card 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p>Cras mattis consectetur purus sit amet fermentum aenean lacinia bibendum nulla sed.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Discover More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
-          </div><!-- End Service Item -->
+          </div>
+          <!-- Service Card 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h3>Digital Marketing</h3>
+              <p>Donec ullamcorper nulla non metus auctor fringilla vestibulum id ligula porta felis.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Discover More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Service Card 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>Security Solutions</h3>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna integer posuere erat.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Discover More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Stats Row -->
+        <div class="stats-row" data-aos="fade-up" data-aos-delay="400">
+          <div class="row g-4 justify-content-center">
+            <div class="col-6 col-md-3">
+              <div class="stat-item">
+                <span class="stat-number">250+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Client Satisfaction</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-item">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Team Experts</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section><!-- /Services Section -->
+    </section>
 
-    <!-- Work Process Section -->
-    <section id="work-process" class="work-process section">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div>
+
+      <!-- Container -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
+          <!-- Filter -->
+          <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Projects</li>
+              <li data-filter=".filter-web">Web Design</li>
+              <li data-filter=".filter-mobile">Mobile Apps</li>
+              <li data-filter=".filter-branding">Branding</li>
+              <li data-filter=".filter-ui">UI/UX</li>
+            </ul>
+          </div>
+          <!-- Portfolio Items -->
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Item 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-2.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">Web Design</span>
+                </div>
+                <div class="project-info">
+                  <h3>Corporate Dashboard System</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Angular</span>
+                      <span>Python</span>
+                    </div>
+                    <span class="year">2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <div class="project-card featured">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-4.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">Mobile Apps</span>
+                  <span class="featured-badge"><i class="bi bi-star-fill"></i> Featured</span>
+                </div>
+                <div class="project-info">
+                  <h3>Smart Finance Application</h3>
+                  <p>Maecenas tempus tellus eget condimentum rhoncus.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Swift</span>
+                      <span>Kotlin</span>
+                    </div>
+                    <span class="year">2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-6.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-6.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">Branding</span>
+                </div>
+                <div class="project-info">
+                  <h3>Fashion Label Identity</h3>
+                  <p>Donec quam felis ultricies nec pellentesque pretium.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Photoshop</span>
+                      <span>Illustrator</span>
+                    </div>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-8.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">UI/UX</span>
+                </div>
+                <div class="project-info">
+                  <h3>E-Learning Platform Design</h3>
+                  <p>Aenean leo ligula porttitor eu consequat vitae.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Figma</span>
+                      <span>Principle</span>
+                    </div>
+                    <span class="year">2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">Web Design</span>
+                </div>
+                <div class="project-info">
+                  <h3>Social Media Platform</h3>
+                  <p>Vivamus elementum semper nisi quisque rutrum.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>React</span>
+                      <span>MongoDB</span>
+                    </div>
+                    <span class="year">2023</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+              <div class="project-card">
+                <div class="image-wrapper">
+                  <img src="assets/img/portfolio/portfolio-3.webp" alt="Project showcase" class="img-fluid" loading="lazy">
+                  <div class="hover-overlay">
+                    <div class="overlay-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn" data-gallery="portfolio">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn">
+                        <i class="bi bi-link-45deg"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="category-badge">Mobile Apps</span>
+                </div>
+                <div class="project-info">
+                  <h3>Health Monitoring App</h3>
+                  <p>Nullam quis ante etiam sit amet orci eget.</p>
+                  <div class="project-meta">
+                    <div class="tech-tags">
+                      <span>Flutter</span>
+                      <span>AWS</span>
+                    </div>
+                    <span class="year">2024</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section" data-aos="zoom-in" data-aos-delay="300">
+          <div class="cta-content">
+            <span class="cta-label"><i class="bi bi-lightning-charge-fill"></i> Ready to Start?</span>
+            <h3>Let's Create Something Amazing Together</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn-cta-primary">Launch Your Project <i class="bi bi-arrow-right"></i></a>
+              <a href="#services" class="btn-cta-secondary"><i class="bi bi-play-circle"></i> Explore Services</a>
+            </div>
+          </div>
+          <div class="cta-decoration">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Work Process</h2>
+        <h2>Why Us</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="sidebar-content">
+              <div class="badge-wrapper">
+                <span class="section-badge"><i class="bi bi-stars"></i> Our Difference</span>
+              </div>
+              <h2>Transform Your Vision Into Digital Excellence</h2>
+              <p class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+
+              <div class="stat-cards">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="stat-value">
+                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="180" data-purecounter-duration="2">180</span>+
+                  </div>
+                  <div class="stat-text">Successful Campaigns</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="stat-value">
+                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="2">95</span>%
+                  </div>
+                  <div class="stat-text">Customer Satisfaction</div>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat-value">
+                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="320" data-purecounter-duration="2">320</span>%
+                  </div>
+                  <div class="stat-text">Growth Achieved</div>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <a href="#" class="btn-main">Get Started Today</a>
+                <a href="#" class="btn-outline">Explore Portfolio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="features-grid">
+              <div class="feature-box highlight" data-aos="fade-up" data-aos-delay="250">
+                <div class="feature-ribbon">Top Rated</div>
+                <div class="feature-icon">
+                  <i class="bi bi-rocket-takeoff-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Rapid Implementation</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+                  <a href="#" class="feature-link">Discover How <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div><!-- End Feature Box -->
+
+              <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                  <i class="bi bi-bar-chart-line-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Analytics-First Approach</h4>
+                  <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                  <a href="#" class="feature-link">Discover How <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div><!-- End Feature Box -->
+
+              <div class="feature-box" data-aos="fade-up" data-aos-delay="350">
+                <div class="feature-icon">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h4>Award-Winning Team</h4>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+                  <a href="#" class="feature-link">Discover How <i class="bi bi-chevron-right"></i></a>
+                </div>
+              </div><!-- End Feature Box -->
+            </div>
+
+            <div class="process-timeline" data-aos="fade-up" data-aos-delay="400">
+              <h5 class="timeline-title"><i class="bi bi-diagram-3-fill"></i> Our Proven Methodology</h5>
+              <div class="timeline-steps">
+                <div class="timeline-step">
+                  <div class="step-marker">1</div>
+                  <div class="step-info">
+                    <strong>Research</strong>
+                    <span>Gathering insights</span>
+                  </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                  <div class="step-marker">2</div>
+                  <div class="step-info">
+                    <strong>Blueprint</strong>
+                    <span>Creating roadmap</span>
+                  </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                  <div class="step-marker">3</div>
+                  <div class="step-info">
+                    <strong>Build</strong>
+                    <span>Developing solution</span>
+                  </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-step">
+                  <div class="step-marker">4</div>
+                  <div class="step-info">
+                    <strong>Refine</strong>
+                    <span>Iterating results</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="capabilities-section" data-aos="fade-up" data-aos-delay="450">
+              <h5 class="capabilities-heading">What We Bring to the Table</h5>
+              <div class="capabilities-grid">
+                <div class="capability-card">
+                  <div class="capability-icon">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <h6>Strategic Consulting</h6>
+                  <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+                </div>
+                <div class="capability-card">
+                  <div class="capability-icon">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <h6>Tailored Development</h6>
+                  <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+                </div>
+                <div class="capability-card">
+                  <div class="capability-icon">
+                    <i class="bi bi-arrow-repeat"></i>
+                  </div>
+                  <h6>Continuous Enhancement</h6>
+                  <p>Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <!-- Left Sidebar -->
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="150">
+            <div class="testimonials-sidebar">
+              <div class="avatar-stack">
+                <img src="assets/img/person/person-m-3.webp" alt="Happy Client" class="avatar" loading="lazy">
+                <img src="assets/img/person/person-f-7.webp" alt="Happy Client" class="avatar" loading="lazy">
+                <img src="assets/img/person/person-m-9.webp" alt="Happy Client" class="avatar" loading="lazy">
+                <img src="assets/img/person/person-f-4.webp" alt="Happy Client" class="avatar" loading="lazy">
+                <span class="avatar-count">+2.5k</span>
+              </div>
+              <div class="sidebar-content">
+                <span class="satisfied-badge"><i class="bi bi-heart-fill"></i> Satisfied Clients</span>
+                <h3>Discover What Our Clients Say About Us</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                <a href="#" class="btn-view-all">View All Reviews <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Left Sidebar -->
+
+          <!-- Right Testimonials Slider -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="testimonials-carousel swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 700,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": 1,
+                  "spaceBetween": 24,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "768": {
+                      "slidesPerView": 2
+                    }
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper">
+
+                <!-- Testimonial Card 1 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="card-top">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <span class="quote-mark"><i class="bi bi-quote"></i></span>
+                    </div>
+                    <p class="testimonial-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <div class="author-info">
+                      <img src="assets/img/person/person-f-2.webp" alt="Client" class="author-img" loading="lazy">
+                      <div class="author-details">
+                        <h5>Sophia Anderson</h5>
+                        <span>Marketing Director</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Testimonial Card -->
+
+                <!-- Testimonial Card 2 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="card-top">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <span class="quote-mark"><i class="bi bi-quote"></i></span>
+                    </div>
+                    <p class="testimonial-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    <div class="author-info">
+                      <img src="assets/img/person/person-m-5.webp" alt="Client" class="author-img" loading="lazy">
+                      <div class="author-details">
+                        <h5>Marcus Webb</h5>
+                        <span>Tech Lead</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Testimonial Card -->
+
+                <!-- Testimonial Card 3 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="card-top">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <span class="quote-mark"><i class="bi bi-quote"></i></span>
+                    </div>
+                    <p class="testimonial-text">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                    <div class="author-info">
+                      <img src="assets/img/person/person-f-9.webp" alt="Client" class="author-img" loading="lazy">
+                      <div class="author-details">
+                        <h5>Elena Rodriguez</h5>
+                        <span>Startup Founder</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Testimonial Card -->
+
+                <!-- Testimonial Card 4 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="card-top">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <span class="quote-mark"><i class="bi bi-quote"></i></span>
+                    </div>
+                    <p class="testimonial-text">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis voluptas assumenda.</p>
+                    <div class="author-info">
+                      <img src="assets/img/person/person-m-11.webp" alt="Client" class="author-img" loading="lazy">
+                      <div class="author-details">
+                        <h5>James Mitchell</h5>
+                        <span>Product Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Testimonial Card -->
+
+                <!-- Testimonial Card 5 -->
+                <div class="swiper-slide">
+                  <div class="testimonial-card">
+                    <div class="card-top">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <span class="quote-mark"><i class="bi bi-quote"></i></span>
+                    </div>
+                    <p class="testimonial-text">Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur reprehenderit.</p>
+                    <div class="author-info">
+                      <img src="assets/img/person/person-f-14.webp" alt="Client" class="author-img" loading="lazy">
+                      <div class="author-details">
+                        <h5>Olivia Chen</h5>
+                        <span>Operations Manager</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Testimonial Card -->
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+            </div>
+          </div><!-- End Right Testimonials Slider -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
@@ -140,229 +801,119 @@
 
         <div class="row gy-5">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="{{ asset('assets/img/steps/steps-1.webp') }}" alt="Step 1" class="img-fluid" loading="lazy">
-              </div>
-              <div class="steps-content">
-                <div class="steps-number">01</div>
-                <h3>Research &amp; Analysis</h3>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
-                <div class="steps-features">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Market Research</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Data Analysis</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>User Feedback</span>
+          <!-- Team Member 1 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-card">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-1.webp" class="img-fluid" alt="Team Member">
+                <div class="social-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
                   </div>
                 </div>
               </div>
-            </div><!-- End Steps Item -->
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="{{ asset('assets/img/steps/steps-2.webp') }}" alt="Step 2" class="img-fluid" loading="lazy">
+              <div class="member-info">
+                <span class="member-badge">Founder</span>
+                <h4>Marcus Wellington</h4>
+                <p>Chief Executive Officer</p>
               </div>
-              <div class="steps-content">
-                <div class="steps-number">02</div>
-                <h3>Design &amp; Planning</h3>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-                <div class="steps-features">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Wireframing</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>UI/UX Design</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Prototyping</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- Team Member 2 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-card">
+              <div class="member-img">
+                <img src="assets/img/person/person-f-2.webp" class="img-fluid" alt="Team Member">
+                <div class="social-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-dribbble"></i></a>
                   </div>
                 </div>
               </div>
-            </div><!-- End Steps Item -->
-          </div>
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="steps-item">
-              <div class="steps-image">
-                <img src="{{ asset('assets/img/steps/steps-3.webp') }}" alt="Step 3" class="img-fluid" loading="lazy">
+              <div class="member-info">
+                <span class="member-badge">Strategy</span>
+                <h4>Elena Rodriguez</h4>
+                <p>Creative Director</p>
               </div>
-              <div class="steps-content">
-                <div class="steps-number">03</div>
-                <h3>Development &amp; Launch</h3>
-                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
-                <div class="steps-features">
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Development</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Testing</span>
-                  </div>
-                  <div class="feature-item">
-                    <i class="bi bi-check-circle"></i>
-                    <span>Deployment</span>
+            </div>
+          </div><!-- End Team Member -->
+
+          <!-- Team Member 3 - Featured -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-card featured">
+              <div class="member-img">
+                <img src="assets/img/person/person-m-5.webp" class="img-fluid" alt="Team Member">
+                <div class="social-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
-            </div><!-- End Steps Item -->
-          </div>
+              <div class="member-info">
+                <span class="member-badge">Tech Lead</span>
+                <h4>David Chen</h4>
+                <p>Head of Engineering</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
 
+          <!-- Team Member 4 -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-card">
+              <div class="member-img">
+                <img src="assets/img/person/person-f-7.webp" class="img-fluid" alt="Team Member">
+                <div class="social-overlay">
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-behance"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-info">
+                <span class="member-badge">Growth</span>
+                <h4>Sophia Martinez</h4>
+                <p>Marketing Director</p>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+        <!-- Stats Row -->
+        <div class="team-stats" data-aos="fade-up" data-aos-delay="500">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="stats-wrapper">
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Team Members</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <span class="stat-number">12</span>
+                  <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                  <span class="stat-number">8+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Work Process Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="{{ asset('assets/img/bg/bg-8.webp') }}" alt="">
-
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('assets/img/portfolio/portfolio-portrait-1.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-portrait-1.webp') }}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('assets/img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-1.webp') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('assets/img/portfolio/portfolio-3.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-3.webp') }}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('assets/img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-4.webp') }}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('assets/img/portfolio/portfolio-portrait-2.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-portrait-2.webp') }}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('assets/img/portfolio/portfolio-portrait-3.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-portrait-3.webp') }}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('assets/img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-7.webp') }}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('assets/img/portfolio/portfolio-8.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-8.webp') }}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('assets/img/portfolio/portfolio-9.webp') }}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="{{ asset('assets/img/portfolio/portfolio-9.webp') }}" title="Branding 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-        </div>
-      </div>
-    </section><!-- /Portfolio Section -->
+    </section><!-- /Team Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -375,74 +926,151 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-5 align-items-stretch">
 
-          <div class="col-lg-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="info-panel">
+              <div class="panel-header">
+                <span class="section-badge">
+                  <i class="bi bi-chat-dots-fill"></i>
+                  Get In Touch
+                </span>
+                <h3>Let's Bring Your Vision to Life</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+              </div>
 
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+              <div class="contact-methods">
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-envelope-paper-fill"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Email Us</span>
+                    <a href="mailto:support@example.com">support@example.com</a>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Call Us</span>
+                    <a href="tel:+15558901234">+1 (555) 890-1234</a>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                <div class="method-item">
+                  <div class="method-icon">
+                    <i class="bi bi-pin-map-fill"></i>
+                  </div>
+                  <div class="method-details">
+                    <span class="method-label">Visit Us</span>
+                    <span>1847 Oak Avenue, Portland, OR 97201</span>
+                  </div>
                 </div>
-              </div><!-- End Info Item -->
+              </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div class="stats-strip">
+                <div class="stat-item">
+                  <span class="stat-number">98%</span>
+                  <span class="stat-text">Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-text">Support</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">3.2k</span>
+                  <span class="stat-text">Projects</span>
+                </div>
+              </div>
+
+              <div class="social-connect">
+                <span>Follow Us</span>
+                <div class="social-icons">
+                  <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
             </div>
-          </div>
+          </div><!-- End Info Panel -->
 
-          <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="form-card">
+              <div class="form-card-header">
+                <div class="header-icon">
+                  <i class="bi bi-send-fill"></i>
+                </div>
+                <div class="header-text">
+                  <h4>Send Us a Message</h4>
+                  <p>Fill out the form and our team will respond within 24 hours.</p>
+                </div>
+              </div>
 
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="input-group-custom">
+                      <label>Your Name</label>
+                      <div class="input-wrapper">
+                        <i class="bi bi-person"></i>
+                        <input type="text" name="name" placeholder="John Doe" required="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="input-group-custom">
+                      <label>Email Address</label>
+                      <div class="input-wrapper">
+                        <i class="bi bi-envelope"></i>
+                        <input type="email" name="email" placeholder="john@example.com" required="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="input-group-custom">
+                      <label>Subject</label>
+                      <div class="input-wrapper">
+                        <i class="bi bi-chat-square-text"></i>
+                        <input type="text" name="subject" placeholder="How can we help?" required="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="input-group-custom">
+                      <label>Your Message</label>
+                      <div class="input-wrapper textarea-wrapper">
+                        <i class="bi bi-pencil-square"></i>
+                        <textarea name="message" rows="5" placeholder="Tell us about your project..." required=""></textarea>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
+                <div class="form-actions">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
-                </div>
+                  <button type="submit" class="btn-submit">
+                    <span>Send Message</span>
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                  </button>
 
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+                  <div class="secure-note">
+                    <i class="bi bi-lock-fill"></i>
+                    <span>Your data is encrypted and secure</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div><!-- End Form Card -->
 
         </div>
 
@@ -450,16 +1078,17 @@
 
     </section><!-- /Contact Section -->
 
-  </main>
     @include('partials.footer')
+
+  </main>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
-    @include('partials.scripts')
 
+  @include('partials.scripts')
 </body>
 
 </html>

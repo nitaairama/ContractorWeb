@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     @include('partials.head')
-    <title>Orbit - About Us</title>
+    <title>Orbit - Projects</title>
 <body>
     @include('partials.header')
     
