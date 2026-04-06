@@ -1,30 +1,30 @@
 <?php
 
-use App\Http\Controllers\PortofolioController;
+use App\Http\Controllers\ProjectController;
 
 // Route publik
-Route::get('/', [PortofolioController::class, 'index']);
-Route::get('/about', [PortofolioController::class, 'about']);
-Route::get('/portofolio', [PortofolioController::class, 'portofolio']);
-Route::get('/contact', [PortofolioController::class, 'contact']);
+Route::get('/', [ProjectController::class, 'index']);
+Route::get('/about', [ProjectController::class, 'about']);
+Route::get('/project', [ProjectController::class, 'project']);
+Route::get('/contact', [ProjectController::class, 'contact']);
 
 // Route admin
 Route::prefix('admin')->group(function () {
     // Tampilkan semua data
-    Route::get('/portofolio', [PortofolioController::class, 'adminIndex']);
+    Route::get('/portofolio', [ProjectController::class, 'adminIndex']);
 
     // Form tambah data
-    Route::get('/portofolio/create', [PortofolioController::class, 'create']);
+    Route::get('/portofolio/create', [ProjectController::class, 'create']);
 
     // Simpan data
-    Route::post('/portofolio/store', [PortofolioController::class, 'store']);
+    Route::post('/portofolio/store', [ProjectController::class, 'store']);
 
     // Form edit data
-    Route::get('/portofolio/edit/{id}', [PortofolioController::class, 'edit']);
+    Route::get('/portofolio/edit/{id}', [ProjectController::class, 'edit']);
 
     // Update data
-    Route::post('/portofolio/update/{id}', [PortofolioController::class, 'update']);
+    Route::post('/portofolio/update/{id}', [ProjectController::class, 'update']);
 
     // Menghapus data
-    Route::delete('/portofolio/delete/{id}', [PortofolioController::class, 'delete']);
+    Route::delete('/portofolio/delete/{id}', [ProjectController::class, 'delete']);
 });

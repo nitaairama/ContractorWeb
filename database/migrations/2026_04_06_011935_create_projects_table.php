@@ -11,14 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // Tabel data proyek
-        Schema::create('portofolios', function (Blueprint $table) {
+        // Tabel data projek
+        Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('category');
+            $table->string('client')->nullable();
+            $table->string('location')->nullable();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
             $table->text('description');
             $table->string('image');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -26,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('portofolios');
+        Schema::dropIfExists('projects');
     }
 };
