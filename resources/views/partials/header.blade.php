@@ -9,19 +9,19 @@
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li>
-                    <a href="{{ url('/') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
+                    <a href="{{ route('home') }}" class="{{ request()->is('/') ? 'active' : '' }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{ url('/about') }}" class="{{ request()->is('about') ? 'active' : '' }}">About</a>
+                    <a href="{{ route('about') }}" class="{{ request()->is('about') ? 'active' : '' }}">About</a>
                 </li>
                 <li>
-                    <a href="{{ url('/project') }}" class="{{ request()->is('project*') ? 'active' : '' }}">Projects</a>
+                    <a href="{{ route('project.index') }}" class="{{ request()->is('project*') ? 'active' : '' }}">Projects</a>
                 </li>
                 <li>
-                    <a href="{{ url('/contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
+                    <a href="{{ route('contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
                 </li>
                 <div>
-                    <a class="btn-getstarted" href="{{ url('/') }}">Get Started</a>
+                    <a class="btn-getstarted" href="{{ route('contact') }}">Get Started</a>
                 </div>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

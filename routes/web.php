@@ -3,10 +3,11 @@
 use App\Http\Controllers\ProjectController;
 
 // Route publik
-Route::get('/', [ProjectController::class, 'index']);
-Route::get('/about', [ProjectController::class, 'about']);
-Route::get('/project', [ProjectController::class, 'project']);
-Route::get('/contact', [ProjectController::class, 'contact']);
+Route::get('/', [ProjectController::class, 'index'])->name('home');
+Route::get('/about', [ProjectController::class, 'about'])->name('about');
+Route::get('/project', [ProjectController::class, 'project'])->name('project.index');
+Route::get('/project_detail/{id}', [ProjectController::class, 'detail'])->name('project.detail');
+Route::get('/contact', [ProjectController::class, 'contact'])->name('contact');
 
 // Route admin
 Route::prefix('admin')->group(function () {

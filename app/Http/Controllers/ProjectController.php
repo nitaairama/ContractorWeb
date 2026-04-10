@@ -27,6 +27,12 @@ class ProjectController extends Controller
         return view('project', compact('data'));
     }
 
+    public function detail($id)
+    {
+        $data = Project::findOrFail($id);
+        return view('project_detail', compact('data'));
+    }
+
     public function contact()
     {
         return view('contact');

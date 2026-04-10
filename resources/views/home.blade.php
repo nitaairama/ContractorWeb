@@ -253,7 +253,7 @@
                                                     <i class="bi bi-eye"></i>
                                                 </a>
                                                 <!-- Project Details -->
-                                                <a href="#" class="action-btn">
+                                                <a href="{{ route('project.detail', $item->id) }}" class="action-btn">
                                                     <i class="bi bi-link-45deg"></i>
                                                 </a>
                                             </div>
@@ -334,7 +334,7 @@
             </div>
         </section>
     </main>
-    
+
     @include('partials.footer')
 
     <!-- Scroll Top -->

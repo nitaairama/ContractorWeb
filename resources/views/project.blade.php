@@ -40,7 +40,7 @@
                                                     <i class="bi bi-eye"></i>
                                                 </a>
                                                 <!-- Project Details -->
-                                                <a href="#" class="action-btn">
+                                                <a href="{{ route('project.detail', $item->id) }}" class="action-btn">
                                                     <i class="bi bi-link-45deg"></i>
                                                 </a>
 
@@ -80,7 +80,7 @@
                                                     <!-- Ongoing -->
                                                     <span
                                                         class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
-                                                        style="background: #0ea5e9; color: white;">
+                                                        style="background: rgba(14,165,233,0.1); color: #0ea5e9;">
                                                         <i class="bi bi-hourglass-split"></i>
                                                         Ongoing
                                                     </span>
@@ -103,7 +103,7 @@
             </div>
         </section>
     </main>
-    
+
     @include('partials.footer')
 
     <!-- Scroll Top -->
