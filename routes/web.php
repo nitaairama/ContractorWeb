@@ -11,20 +11,20 @@ Route::get('/contact', [ProjectController::class, 'contact']);
 // Route admin
 Route::prefix('admin')->group(function () {
     // Tampilkan semua data
-    Route::get('/portofolio', [ProjectController::class, 'adminIndex']);
+    Route::get('/', [ProjectController::class, 'adminIndex'])->name('admin.index');
 
     // Form tambah data
-    Route::get('/portofolio/create', [ProjectController::class, 'create']);
+    Route::get('/create', [ProjectController::class, 'create'])->name('admin.create');
 
     // Simpan data
-    Route::post('/portofolio/store', [ProjectController::class, 'store']);
+    Route::post('/store', [ProjectController::class, 'store'])->name('admin.store');
 
     // Form edit data
-    Route::get('/portofolio/edit/{id}', [ProjectController::class, 'edit']);
+    Route::get('/edit/{id}', [ProjectController::class, 'edit'])->name('admin.edit');
 
     // Update data
-    Route::post('/portofolio/update/{id}', [ProjectController::class, 'update']);
+    Route::post('/update/{id}', [ProjectController::class, 'update'])->name('admin.update');
 
     // Menghapus data
-    Route::delete('/portofolio/delete/{id}', [ProjectController::class, 'delete']);
+    Route::delete('/delete/{id}', [ProjectController::class, 'delete'])->name('admin.delete');
 });

@@ -54,8 +54,8 @@ class ProjectController extends Controller
             'location'    => 'required',
             'start_date'  => 'required|date',
             'end_date'    => 'nullable|date|after_or_equal:start_date',
-            'image'       => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
             'description' => 'required',
+            'image'       => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
         ]);
 
         // Proses upload gambar
