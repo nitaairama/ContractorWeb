@@ -54,7 +54,8 @@
                                     <div class="hover-overlay">
                                         <div class="overlay-actions">
 
-                                            <a href="{{ asset('images/' . $item->image) }}" class="glightbox action-btn">
+                                            <a href="{{ asset('images/' . $item->image) }}"
+                                                class="glightbox action-btn">
                                                 <i class="bi bi-eye"></i>
                                             </a>
 
@@ -120,6 +121,13 @@
         </section>
 
     </main>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
 
     @include('partials.scripts')

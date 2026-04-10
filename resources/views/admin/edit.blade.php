@@ -99,6 +99,9 @@
 
     </main>
 
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
     @include('partials.scripts')
 </body>
 

@@ -8,7 +8,7 @@
 
 <body>
 
-<!-- Header -->
+    <!-- Header -->
     <header id="header" class="header d-flex align-items-center sticky-top py-4">
         <div class="container position-relative d-flex align-items-center justify-content-between">
             <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
@@ -26,7 +26,7 @@
             </nav>
         </div>
     </header>
-    
+
     <main class="container py-5">
 
         <div class="section-title mb-4">
@@ -94,6 +94,9 @@
         </form>
 
     </main>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
     @include('partials.scripts')
 </body>

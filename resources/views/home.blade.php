@@ -237,102 +237,77 @@
                     data-sort="original-order">
                     <!-- Portfolio Items -->
                     <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                        <!-- Item 1 -->
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-                            <div class="project-card">
-                                <div class="image-wrapper">
-                                    <img src="assets/img/portfolio/portfolio-2.webp" alt="Project showcase"
-                                        class="img-fluid" loading="lazy">
-                                    <div class="hover-overlay">
-                                        <div class="overlay-actions">
-                                            <a href="assets/img/portfolio/portfolio-2.webp"
-                                                class="glightbox action-btn" data-gallery="portfolio">
-                                                <i class="bi bi-eye"></i>
-                                            </a>
-                                            <a href="#" class="action-btn">
-                                                <i class="bi bi-link-45deg"></i>
-                                            </a>
+                        @forelse($data as $item)
+                            <div
+                                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ strtolower($item->category) }}">
+                                <div class="project-card">
+                                    <div class="image-wrapper">
+                                        <!-- Photo Source -->
+                                        <img src="{{ asset('images/' . $item->image) }}" alt="Project showcase"
+                                            class="img-fluid" loading="lazy">
+                                        <div class="hover-overlay">
+                                            <div class="overlay-actions">
+                                                <!-- View Photo -->
+                                                <a href="{{ asset('images/' . $item->image) }}"
+                                                    class="glightbox action-btn" data-gallery="portfolio">
+                                                    <i class="bi bi-eye"></i>
+                                                </a>
+                                                <!-- Project Details -->
+                                                <a href="#" class="action-btn">
+                                                    <i class="bi bi-link-45deg"></i>
+                                                </a>
+                                            </div>
                                         </div>
+                                        <!-- Category Badge -->
+                                        <span class="category-badge">
+                                            {{ $item->category }}
+                                        </span>
                                     </div>
-                                    <span class="category-badge">Web Design</span>
-                                </div>
-                                <div class="project-info">
-                                    <h3>Corporate Dashboard System</h3>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus.</p>
-                                    <div class="project-meta">
-                                        <div class="tech-tags">
-                                            <span>Angular</span>
-                                            <span>Python</span>
+
+                                    <!-- Project Info -->
+                                    <div class="project-info">
+                                        <!-- Title -->
+                                        <h3>{{ $item->title }}</h3>
+                                        <!-- Description -->
+                                        <p>
+                                            {{ \Illuminate\Support\Str::limit($item->description, 80) }}
+                                        </p>
+                                        <!-- META -->
+                                        <div class="project-meta">
+                                            <div class="d-flex align-items-center gap-3 flex-wrap small text-muted">
+                                                <!-- Location Tag -->
+                                                <span
+                                                    class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
+                                                    style="background: #0ea5e9; color: white;">
+                                                    <i class="bi bi-geo-alt"></i>
+                                                    {{ $item->location ?? '-' }}
+                                                </span>
+                                                @if ($item->end_date)
+                                                    <!-- Date (If Finished) -->
+                                                    <span class="d-inline-flex align-items-center gap-2"">
+                                                        <i class="bi bi-calendar3"></i>
+                                                        {{ \Carbon\Carbon::parse($item->end_date)->format('d F Y') }}
+                                                    </span>
+                                                @else
+                                                    <!-- Ongoing -->
+                                                    <span
+                                                        class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
+                                                        style="background: rgba(14,165,233,0.1); color: #0ea5e9;">
+                                                        <i class="bi bi-hourglass-split"></i>
+                                                        Ongoing
+                                                    </span>
+                                                @endif
+                                            </div>
                                         </div>
-                                        <span class="year">2024</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-                            <div class="project-card">
-                                <div class="image-wrapper">
-                                    <img src="assets/img/portfolio/portfolio-4.webp" alt="Project showcase"
-                                        class="img-fluid" loading="lazy">
-                                    <div class="hover-overlay">
-                                        <div class="overlay-actions">
-                                            <a href="assets/img/portfolio/portfolio-4.webp"
-                                                class="glightbox action-btn" data-gallery="portfolio">
-                                                <i class="bi bi-eye"></i>
-                                            </a>
-                                            <a href="#" class="action-btn">
-                                                <i class="bi bi-link-45deg"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <span class="category-badge">Mobile Apps</span>
-                                </div>
-                                <div class="project-info">
-                                    <h3>Smart Finance Application</h3>
-                                    <p>Maecenas tempus tellus eget condimentum rhoncus.</p>
-                                    <div class="project-meta">
-                                        <div class="tech-tags">
-                                            <span>Swift</span>
-                                            <span>Kotlin</span>
-                                        </div>
-                                        <span class="year">2024</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <div class="project-card">
-                                <div class="image-wrapper">
-                                    <img src="assets/img/portfolio/portfolio-6.webp" alt="Project showcase"
-                                        class="img-fluid" loading="lazy">
-                                    <div class="hover-overlay">
-                                        <div class="overlay-actions">
-                                            <a href="assets/img/portfolio/portfolio-6.webp"
-                                                class="glightbox action-btn" data-gallery="portfolio">
-                                                <i class="bi bi-eye"></i>
-                                            </a>
-                                            <a href="#" class="action-btn">
-                                                <i class="bi bi-link-45deg"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <span class="category-badge">Branding</span>
-                                </div>
-                                <div class="project-info">
-                                    <h3>Fashion Label Identity</h3>
-                                    <p>Donec quam felis ultricies nec pellentesque pretium.</p>
-                                    <div class="project-meta">
-                                        <div class="tech-tags">
-                                            <span>Photoshop</span>
-                                            <span>Illustrator</span>
-                                        </div>
-                                        <span class="year">2023</span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        @empty
+                            <!-- Empty State -->
+                            <div class="col-12 text-center">
+                                <p>No projects found</p>
+                            </div>
+                        @endforelse
                     </div>
                 </div>
 
@@ -358,9 +333,9 @@
                 </div>
             </div>
         </section>
-
-        @include('partials.footer')
     </main>
+    
+    @include('partials.footer')
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
