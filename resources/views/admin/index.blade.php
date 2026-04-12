@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    @include('partials.head')
-    <title>Orbit - Admin Dashboard</title>
-</head>
+@include('partials.head')
+<title>Archiflow - Dashboard</title>
 
 <body>
     <!-- Header -->
     <header id="header" class="header d-flex align-items-center sticky-top py-4">
         <div class="container position-relative d-flex align-items-center justify-content-between">
-            <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
-                <h1 class="sitename">Orbit Admin</h1><span>.</span>
+            <a href="" class="logo d-flex align-items-center me-auto me-xl-0 gap-1">
+                <img src="{{ asset('assets/img/favicon.png') }}" alt="Archiflow Logo" class="img-fluid me-2">
+                <h1 class="sitename">Admin</h1>
             </a>
-
             <!-- Navigation Bar -->
             <nav id="navmenu" class="navmenu">
                 <ul>
@@ -29,11 +26,10 @@
     <main>
         <!-- Project Section -->
         <section id="portfolio" class="portfolio section">
-            <!-- Section Title -->
+            <!-- Title -->
             <div class="container section-title">
                 <h2>Manage Projects</h2>
             </div>
-
             <!-- Container -->
             <div class="container">
                 <!-- Project Cards -->
@@ -100,15 +96,14 @@
     </main>
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
 
     @include('partials.scripts')
 
-        <!-- Success Popup -->
+    <!-- Success Popup -->
     <script>
         @if (session('success'))
             Swal.fire({
@@ -120,5 +115,4 @@
         @endif
     </script>
 </body>
-
 </html>

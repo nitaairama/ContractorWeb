@@ -6407,12 +6407,19 @@ section,
   padding: 10px 14px;
 }
 
-  .form-control:focus {
-  border-color: #1ea0af;
+.form-control:focus {
+  border-color: var(--accent-color);
   box-shadow: 0 0 0 2px rgba(14,165,233,0.1);
 }
 
 .btn-submit {
   border-radius: 10px;
   padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-submit:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }

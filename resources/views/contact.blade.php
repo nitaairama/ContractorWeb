@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('partials.head')
-<title>Orbit - Contact</title>
+<title>Archiflow - Contact</title>
 
 <body>
     @include('partials.header')
     <main>
         <!-- Contact Section -->
         <section id="contact" class="contact section">
+            <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Contact Info</h2>
             </div>
-
-            <!-- Contact Information -->
+            <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <!-- Contact Info -->
                 <div class="row gy-5 align-items-stretch">
-                    <!-- Info Panel -->
+                    <!-- Left Panel -->
                     <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
                         <div class="info-panel">
                             <div class="panel-header">
@@ -29,8 +30,9 @@
                                     consequuntur magni dolores.
                                 </p>
                             </div>
-
+                            <!-- Contact Methods -->
                             <div class="contact-methods">
+                                <!-- Method Item 1 -->
                                 <div class="method-item">
                                     <div class="method-icon">
                                         <i class="bi bi-envelope-paper-fill"></i>
@@ -40,7 +42,7 @@
                                         <a href="mailto:support@example.com">support@example.com</a>
                                     </div>
                                 </div>
-
+                                <!-- Method Item 2 -->
                                 <div class="method-item">
                                     <div class="method-icon">
                                         <i class="bi bi-headset"></i>
@@ -50,7 +52,7 @@
                                         <a href="tel:+15558901234">+1 (555) 890-1234</a>
                                     </div>
                                 </div>
-
+                                <!-- Method Item 3 -->
                                 <div class="method-item">
                                     <div class="method-icon">
                                         <i class="bi bi-pin-map-fill"></i>
@@ -62,6 +64,7 @@
                                 </div>
                             </div>
 
+                            <!-- Stats Strip -->
                             <div class="stats-strip">
                                 <div class="stat-item">
                                     <span class="stat-number">98%</span>
@@ -77,6 +80,7 @@
                                 </div>
                             </div>
 
+                            <!-- Social Connect -->
                             <div class="social-connect">
                                 <span>Follow Us</span>
                                 <div class="social-icons">
@@ -89,7 +93,7 @@
                         </div>
                     </div>
 
-                    <!-- Send Message -->
+                    <!-- Right Panel -->
                     <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
                         <div class="form-card">
                             <div class="form-card-header">
@@ -101,63 +105,59 @@
                                     <p>Fill out the form and our team will respond within 24 hours.</p>
                                 </div>
                             </div>
-
-                            <form action="forms/contact.php" method="post" class="php-email-form">
+                            <!-- Message Form -->
+                            <form method="post" class="php-email-form" autocomplete="off">
                                 <div class="row g-4">
+                                    <!-- Name -->
                                     <div class="col-md-6">
                                         <div class="input-group-custom">
                                             <label>Your Name</label>
                                             <div class="input-wrapper">
                                                 <i class="bi bi-person"></i>
-                                                <input type="text" name="name" placeholder="John Doe"
-                                                    required="">
+                                                <input type="text" name="name" placeholder="John Doe">
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- Email -->
                                     <div class="col-md-6">
                                         <div class="input-group-custom">
                                             <label>Email Address</label>
                                             <div class="input-wrapper">
                                                 <i class="bi bi-envelope"></i>
-                                                <input type="email" name="email" placeholder="john@example.com"
-                                                    required="">
+                                                <input type="email" name="email" placeholder="john@example.com">
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- Subject -->
                                     <div class="col-12">
                                         <div class="input-group-custom">
                                             <label>Subject</label>
                                             <div class="input-wrapper">
                                                 <i class="bi bi-chat-square-text"></i>
-                                                <input type="text" name="subject" placeholder="How can we help?"
-                                                    required="">
+                                                <input type="text" name="subject" placeholder="How can we help?">
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- Message -->
                                     <div class="col-12">
                                         <div class="input-group-custom">
                                             <label>Your Message</label>
                                             <div class="input-wrapper textarea-wrapper">
                                                 <i class="bi bi-pencil-square"></i>
-                                                <textarea name="message" rows="5" placeholder="Tell us about your project..." required=""></textarea>
+                                                <textarea name="message" rows="5" placeholder="Tell us about your project..."></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- Form Actions -->
                                 <div class="form-actions">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                                    <button type="submit" class="btn-submit">
+                                    <!-- Button -->
+                                    <button class="btn-submit">
                                         <span>Send Message</span>
                                         <i class="bi bi-arrow-right-circle-fill"></i>
                                     </button>
-
+                                    <!-- Secure Note -->
                                     <div class="secure-note">
                                         <i class="bi bi-lock-fill"></i>
                                         <span>Your data is encrypted and secure</span>
@@ -168,22 +168,17 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <!-- /Contact Section -->
-
-        @include('partials.footer')
     </main>
+    
+    @include('partials.footer')
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
-    </a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
 
     @include('partials.scripts')
 </body>
-
 </html>

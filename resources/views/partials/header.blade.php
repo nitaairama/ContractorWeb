@@ -1,8 +1,9 @@
 <!-- Header -->
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-            <h1 class="sitename">Archiflow</h1><span>.</span>
+        <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto me-xl-0 gap-1">
+            <img src="{{ asset('assets/img/favicon.png') }}" alt="Archiflow Logo" class="img-fluid me-2">
+            <h1 class="sitename">Archiflow</h1>
         </a>
 
         <!-- Navigation Bar -->

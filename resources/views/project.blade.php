@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('partials.head')
-<title>Orbit - Projects</title>
+<title>Archiflow - Projects</title>
 
 <body>
     @include('partials.header')
     <main>
         <!-- Projects Section -->
         <section id="portfolio" class="portfolio section">
+            <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Projects</h2>
             </div>
-
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
@@ -46,7 +46,6 @@
 
                                             </div>
                                         </div>
-
                                         <!-- Category Badge -->
                                         <span class="category-badge">
                                             {{ $item->category }}
@@ -64,9 +63,9 @@
                                         <!-- META -->
                                         <div class="project-meta">
                                             <div class="d-flex align-items-center gap-3 flex-wrap small text-muted">
-                                                <!-- Location Tag -->
+                                                <!-- Location -->
                                                 <span class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
-                                                    style="background: #0ea5e9; color: white;">
+                                                    style="background: #1ea0af; color: white;">
                                                     <i class="bi bi-geo-alt"></i>
                                                     {{ $item->location ?? '-' }}
                                                 </span>
@@ -80,7 +79,7 @@
                                                     <!-- Ongoing -->
                                                     <span
                                                         class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
-                                                        style="background: rgba(14,165,233,0.1); color: #0ea5e9;">
+                                                        style="background: rgba(30, 160, 175, 0.1); color: #1ea0af;">
                                                         <i class="bi bi-hourglass-split"></i>
                                                         Ongoing
                                                     </span>
@@ -114,5 +113,4 @@
 
     @include('partials.scripts')
 </body>
-
 </html>
