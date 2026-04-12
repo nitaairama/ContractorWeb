@@ -23,7 +23,7 @@
                             <li data-filter=".filter-structure">Structure</li>
                         </ul>
                     </div>
-                    <!-- Portfolio Items -->
+                    <!-- Project Cards -->
                     <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                         @forelse($data as $item)
                             <div
@@ -97,7 +97,6 @@
                                 <p>No projects found</p>
                             </div>
                         @endforelse
-
                     </div>
                 </div>
             </div>

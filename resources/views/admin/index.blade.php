@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
     <!-- Header -->
     <header id="header" class="header d-flex align-items-center sticky-top py-4">
         <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -28,96 +27,74 @@
     </header>
 
     <main>
-
+        <!-- Project Section -->
         <section id="portfolio" class="portfolio section">
-
+            <!-- Section Title -->
             <div class="container section-title">
                 <h2>Manage Projects</h2>
             </div>
 
+            <!-- Container -->
             <div class="container">
-
-                <!-- PROJECT LIST -->
+                <!-- Project Cards -->
                 <div class="row g-4">
-
                     @forelse($data as $item)
                         <div class="col-lg-4 col-md-6">
-
                             <div class="project-card">
-
-                                <!-- IMAGE -->
+                                <!-- Image -->
                                 <div class="image-wrapper">
-
-                                    <img src="{{ asset('images/' . $item->image) }}" class="img-fluid"
-                                        alt="{{ $item->title }}">
-
+                                    <img src="{{ asset('images/' . ($item->images[0] ?? $item->image)) }}"
+                                        class="img-fluid" alt="{{ $item->title }}">
                                     <div class="hover-overlay">
                                         <div class="overlay-actions">
-
-                                            <a href="{{ asset('images/' . $item->image) }}"
+                                            <a href="{{ asset('images/' . ($item->images[0] ?? $item->image)) }}"
                                                 class="glightbox action-btn">
                                                 <i class="bi bi-eye"></i>
                                             </a>
-
                                         </div>
                                     </div>
-
+                                    <!-- Category -->
                                     <span class="category-badge">
                                         {{ $item->category }}
                                     </span>
-
                                 </div>
 
-                                <!-- CONTENT -->
+                                <!-- Content -->
                                 <div class="project-info">
-
                                     <h3>{{ $item->title }}</h3>
-
-                                    <p class="small text-muted">
-                                        {{ $item->location }}
-                                    </p>
-
                                     <p>
                                         {{ Str::limit($item->description, 80) }}
                                     </p>
-
-                                    <!-- ACTION -->
+                                    <!-- Action Button -->
                                     <div class="mt-3 d-flex gap-2">
-
-                                        <a href="/admin/edit/{{ $item->id }}" class="btn btn-warning btn-sm">
+                                        <!-- Edit -->
+                                        <a href="/admin/edit/{{ $item->id }}" class="btn btn-sm px-3 py-2 rounded-5"
+                                            style="background: #facc15; color: #1e293b; border: none;">
                                             Edit
                                         </a>
-
-                                        <form action="/admin/delete/{{ $item->id }}" method="POST">
+                                        <!-- Delete -->
+                                        <form id="delete-form-{{ $item->id }}"
+                                            action="/admin/delete/{{ $item->id }}" method="POST">
                                             @csrf
                                             @method('DELETE')
-
-                                            <button onclick="return confirm('Yakin hapus project ini?')"
-                                                class="btn btn-danger btn-sm">
+                                            <button type="button" onclick="confirmDelete({{ $item->id }})"
+                                                class="btn btn-sm px-3 py-2 rounded-5"
+                                                style="background: #ef4444; color: white; border: none;">
                                                 Delete
                                             </button>
                                         </form>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     @empty
-
-                        <!-- BONUS FIX -->
+                        <!-- Empty State -->
                         <div class="col-12 text-center">
                             <p>No projects found</p>
                         </div>
                     @endforelse
-
                 </div>
-
             </div>
-
         </section>
 
     </main>
@@ -129,8 +106,19 @@
     <!-- Preloader -->
     <div id="preloader"></div>
 
-
     @include('partials.scripts')
+
+        <!-- Success Popup -->
+    <script>
+        @if (session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: '{{ session('success') }}',
+                confirmButtonColor: '#0ea5e9'
+            });
+        @endif
+    </script>
 </body>
 
 </html>

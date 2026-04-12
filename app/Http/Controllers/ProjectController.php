@@ -61,7 +61,11 @@ class ProjectController extends Controller
             'start_date'  => 'required|date',
             'end_date'    => 'nullable|date|after_or_equal:start_date',
             'description' => 'required',
-            'image'       => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
+            'image'       => 'required|mimes:jpeg,png,jpg,webp|max:2048',
+        ], [
+            'required' => 'This field is required',
+            'image.mimes' => 'Only JPEG, PNG, JPG, and WEBP images are allowed',
+            'image.max' => 'Image size must be less than 2MB',
         ]);
 
         // Proses upload gambar
@@ -81,7 +85,7 @@ class ProjectController extends Controller
             'image'       => $filename,
         ]);
 
-        return redirect()->route('admin.index')->with('success', 'Project berhasil ditambahkan!');
+        return redirect()->route('admin.index')->with('success', 'Project created successfully');
     }
 
     public function edit($id)
@@ -94,39 +98,51 @@ class ProjectController extends Controller
     {
         $data = Project::findOrFail($id);
 
+        // Validation
         $request->validate([
-            'title'      => 'required',
-            'start_date' => 'required|date',
-            'image'      => 'nullable|image|max:2048',
+            'title'       => 'required|max:255',
+            'category'    => 'required|string',
+            'client'      => 'required|string',
+            'location'    => 'required|string',
+            'start_date'  => 'required|date',
+            'end_date'    => 'nullable|date|after_or_equal:start_date',
+            'description' => 'required|string',
+            'image'       => 'nullable|mimes:jpeg,png,jpg,webp|max:2048',
+        ], [
+            '*.required' => 'This field is required',
+            'image.mimes' => 'Only JPEG, PNG, JPG, and WEBP images are allowed',
+            'image.max' => 'Image size must be less than 2MB',
         ]);
 
-        // Update gambar baru
+        // Handle image baru jika ada
         if ($request->hasFile('image')) {
-            // Hapus gambar lama
-            if (File::exists(public_path('images/' . $data->image))) {
-                File::delete(public_path('images/' . $data->image));
-            }
 
-            $file = $request->file('image');
-            $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path('images'), $filename);
-            $data->image = $filename;
+        // Hapus gambar lama
+        if ($data->image && File::exists(public_path('images/' . $data->image))) {
+            File::delete(public_path('images/' . $data->image));
         }
 
-        // Update data lainnya
-        $data->update([
-            'title'       => $request->title,
-            'category'    => $request->category,
-            'client'      => $request->client,
-            'location'    => $request->location,
-            'start_date'  => $request->start_date,
-            'end_date'    => $request->end_date,
-            'description' => $request->description,
-        ]);
+        $file = $request->file('image');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('images'), $filename);
 
-        return redirect()->route('admin.index')->with('success', 'Project berhasil diperbarui!');
+        $data->image = $filename;
     }
 
+    // Update data
+    $data->update([
+        'title'       => $request->title,
+        'category'    => $request->category,
+        'client'      => $request->client,
+        'location'    => $request->location,
+        'start_date'  => $request->start_date,
+        'end_date'    => $request->end_date,
+        'description' => $request->description,
+    ]);
+
+    return redirect()->route('admin.index')
+        ->with('success', 'Project updated successfully');
+}
     public function delete($id)
     {
         $data = Project::findOrFail($id);
@@ -138,6 +154,6 @@ class ProjectController extends Controller
 
         $data->delete();
 
-        return redirect()->route('admin.index')->with('success', 'Project berhasil dihapus!');
+        return redirect()->route('admin.index')->with('success', 'Project deleted successfully');
     }
 }
