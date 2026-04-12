@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('partials.head')
-<title>Orbit - Homepage</title>
+<title>Archiflow</title>
 
 <body class="index-page">
     @include('partials.header')
@@ -14,16 +14,17 @@
                         <div class="hero-content">
                             <div class="hero-tag" data-aos="fade-up" data-aos-delay="250">
                                 <span class="tag-dot"></span>
-                                <span class="tag-text">Premium Digital Solutions</span>
+                                <span class="tag-text">Trusted Construction Partner</span>
                             </div>
-                            <h1 class="hero-headline" data-aos="fade-up" data-aos-delay="300">Crafting Exceptional
-                                Digital Experiences</h1>
-                            <p class="hero-text" data-aos="fade-up" data-aos-delay="350">Pellentesque habitant morbi
-                                tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-                                quam, feugiat vitae ultricies eget.</p>
+                            <h1 class="hero-headline" data-aos="fade-up" data-aos-delay="300">Building Tommorow's
+                                Infrastructure Today</h1>
+                            <p class="hero-text" data-aos="fade-up" data-aos-delay="350">Blending advanced engineering
+                                with sustainable practices to create resilient structures. Transform complex blueprints into
+                                iconic landmarks that stand the test of time.
+                            </p>
                             <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                                <a href="#services" class="cta-button">
-                                    <span>Explore Services</span>
+                                <a href="{{ route('project.index') }}" class="cta-button">
+                                    <span>Explore Our Projects</span>
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
@@ -36,7 +37,6 @@
         <section id="about" class="about section">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row gy-5 align-items-center">
-
                     <!-- Left Side -->
                     <div class="col-xl-6 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
                         <div class="about-images-wrapper">
@@ -59,15 +59,14 @@
                     <div class="col-xl-6 aos-init aos-animate" data-aos="fade-left" data-aos-delay="300">
                         <div class="about-content">
                             <div class="section-subtitle">Who We Are</div>
-                            <h2>Innovating for Your Success Through Technology</h2>
+                            <h2>We Build With Precision, Passion, and Purpose</h2>
                             <p class="lead-text">
-                                Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                With over a decade of experience, we specialize in delivering world-class engineering
+                                and architectural solutions.
                             </p>
                             <p class="mb-4 description">
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci.
+                                Our commitment goes beyond structures, we focus on building lasting relationships
+                                through transparency and excellence.
                             </p>
                             <!-- Features Grid -->
                             <div class="features-grid">
@@ -96,9 +95,10 @@
 
         <!-- Services Section -->
         <section id="services" class="services section">
+            <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <h2>Our Services</h2>
+                <p>Delivering top-tier construction solutions tailored to meet modern architectural</p>
             </div>
 
             <!-- Service Card -->
@@ -108,12 +108,11 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-card">
                             <div class="icon-wrapper">
-                                <i class="bi bi-lightbulb"></i>
+                                <i class="fa-solid fa-house"></i>
                             </div>
-                            <h3>Strategic Consulting</h3>
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                egestas.</p>
-                            <a href="service-details.html" class="service-link">
+                            <h3>Residential Building</h3>
+                            <p>Crafting high-quality homes designed for comfort, durability, and living standards.</p>
+                            <a href="" class="service-link">
                                 <span>Discover More</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -123,12 +122,11 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-card">
                             <div class="icon-wrapper">
-                                <i class="bi bi-graph-up-arrow"></i>
+                                <i class="fa-solid fa-building"></i>
                             </div>
-                            <h3>Growth Analytics</h3>
-                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                            </p>
-                            <a href="service-details.html" class="service-link">
+                            <h3>Commercial Building</h3>
+                            <p>Developing functional and iconic business spaces that drive professional success.</p>
+                            <a href="" class="service-link">
                                 <span>Discover More</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -138,11 +136,11 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-card">
                             <div class="icon-wrapper">
-                                <i class="bi bi-palette"></i>
+                                <i class="fa-solid fa-paint-roller"></i>
                             </div>
-                            <h3>Creative Design</h3>
-                            <p>Praesent commodo cursus magna vel scelerisque nisl consectetur et vivamus sagittis.</p>
-                            <a href="service-details.html" class="service-link">
+                            <h3>Renovation & Remodeling</h3>
+                            <p>Transforming existing structures with innovative upgrades while maintaining structural integrity.</p>
+                            <a href="" class="service-link">
                                 <span>Discover More</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -152,11 +150,11 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-card">
                             <div class="icon-wrapper">
-                                <i class="bi bi-code-slash"></i>
+                                <i class="fa-solid fa-road-bridge"></i>
                             </div>
-                            <h3>Web Development</h3>
-                            <p>Cras mattis consectetur purus sit amet fermentum aenean lacinia bibendum nulla sed.</p>
-                            <a href="service-details.html" class="service-link">
+                            <h3>Road & Infrastructure</h3>
+                            <p>Building backbone connectivity with precision engineering and sustainable materials.</p>
+                            <a href="" class="service-link">
                                 <span>Discover More</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -166,11 +164,11 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-card">
                             <div class="icon-wrapper">
-                                <i class="bi bi-megaphone"></i>
+                                <i class="fa-solid fa-clipboard-list"></i>
                             </div>
-                            <h3>Digital Marketing</h3>
-                            <p>Donec ullamcorper nulla non metus auctor fringilla vestibulum id ligula porta felis.</p>
-                            <a href="service-details.html" class="service-link">
+                            <h3>Project Management</h3>
+                            <p>Ensuring seamless execution from planning to handover through expert coordinations.</p>
+                            <a href="" class="service-link">
                                 <span>Discover More</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -180,11 +178,11 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-card">
                             <div class="icon-wrapper">
-                                <i class="bi bi-shield-check"></i>
+                                <i class="fa-solid fa-pen-ruler"></i>
                             </div>
-                            <h3>Security Solutions</h3>
-                            <p>Maecenas sed diam eget risus varius blandit sit amet non magna integer posuere erat.</p>
-                            <a href="service-details.html" class="service-link">
+                            <h3>Architecture & Design</h3>
+                            <p>Blending aesthetics and functionality to create visionary blueprints for the bright future.</p>
+                            <a href="" class="service-link">
                                 <span>Discover More</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
@@ -209,13 +207,13 @@
                         </div>
                         <div class="col-6 col-md-3">
                             <div class="stat-item">
-                                <span class="stat-number">15+</span>
+                                <span class="stat-number">10+</span>
                                 <span class="stat-label">Years Experience</span>
                             </div>
                         </div>
                         <div class="col-6 col-md-3">
                             <div class="stat-item">
-                                <span class="stat-number">40+</span>
+                                <span class="stat-number">50+</span>
                                 <span class="stat-label">Team Experts</span>
                             </div>
                         </div>
@@ -226,30 +224,27 @@
 
         <!-- Projects Section -->
         <section id="portfolio" class="portfolio section">
+            <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Projects</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>A showcase of our commitment to excellence, built with precision and modern design</p>
             </div>
 
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="isotope-layout" data-default-filter="*" data-layout="fitRows"
-                    data-sort="original-order">
+                <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
                     <!-- Portfolio Items -->
                     <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                         @forelse($data as $item)
-                            <div
-                                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ strtolower($item->category) }}">
+                            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-{{ strtolower($item->category) }}">
                                 <div class="project-card">
                                     <div class="image-wrapper">
                                         <!-- Photo Source -->
-                                        <img src="{{ asset('images/' . $item->image) }}" alt="Project showcase"
-                                            class="img-fluid" loading="lazy">
+                                        <img src="{{ asset('images/' . $item->image) }}" alt="Project showcase" class="img-fluid" loading="lazy">
                                         <div class="hover-overlay">
                                             <div class="overlay-actions">
                                                 <!-- View Photo -->
-                                                <a href="{{ asset('images/' . $item->image) }}"
-                                                    class="glightbox action-btn" data-gallery="portfolio">
+                                                <a href="{{ asset('images/' . $item->image) }}" class="glightbox action-btn" data-gallery="portfolio">
                                                     <i class="bi bi-eye"></i>
                                                 </a>
                                                 <!-- Project Details -->
@@ -316,13 +311,10 @@
                     <div class="cta-content">
                         <span class="cta-label"><i class="bi bi-lightning-charge-fill"></i> Ready to Start?</span>
                         <h3>Let's Create Something Amazing Together</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium totam rem aperiam.</p>
+                        <p>Whether you're planning a project, our team is ready to bring your vision to life with precision and excellence.</p>
                         <div class="cta-buttons">
-                            <a href="{{ url('/project') }}" class="btn-cta-primary">See All Projects <i
-                                    class="bi bi-arrow-right"></i></a>
-                            <a href="#services" class="btn-cta-secondary"><i class="bi bi-play-circle"></i> Explore
-                                Services</a>
+                            <a href="{{ url('/project') }}" class="btn-cta-primary">See All Projects <i class="bi bi-arrow-right"></i></a>
+                            <a href="{{ url('/') }}" class="btn-cta-secondary"><i class="bi bi-play-circle"></i> Explore Services</a>
                         </div>
                     </div>
                     <div class="cta-decoration">
@@ -338,13 +330,11 @@
     @include('partials.footer')
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Preloader -->
     <div id="preloader"></div>
 
     @include('partials.scripts')
 </body>
-
 </html>

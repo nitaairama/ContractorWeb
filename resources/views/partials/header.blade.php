@@ -2,7 +2,7 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="{{ url('/') }}" class="logo d-flex align-items-center me-auto me-xl-0">
-            <h1 class="sitename">Orbit</h1><span>.</span>
+            <h1 class="sitename">Archiflow</h1><span>.</span>
         </a>
 
         <!-- Navigation Bar -->
