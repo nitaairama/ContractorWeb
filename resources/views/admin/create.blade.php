@@ -28,6 +28,7 @@
         <div class="container section-title">
             <h2>Create Project</h2>
         </div>
+
         <!-- Create Form -->
         <div class="form-card">
             <form id="projectForm" action="/admin/store" method="POST" enctype="multipart/form-data" autocomplete="off"
@@ -102,8 +103,7 @@
                         @enderror
                         <!-- Preview Image -->
                         <div class="mt-3">
-                            <img id="previewImage" src="" class="img-fluid rounded"
-                                style="max-height:200px; display:none;">
+                            <img id="previewImage" src="" class="img-fluid rounded" style="max-height:200px; display:none;">
                         </div>
                     </div>
                 </div>

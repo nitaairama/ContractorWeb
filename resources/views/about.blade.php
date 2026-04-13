@@ -11,8 +11,8 @@
             <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Team</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
+
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <!-- Team Card -->
@@ -61,7 +61,7 @@
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-card">
                             <div class="member-img">
-                                <img src="assets/img/person/person-m-5.webp" class="img-fluid" alt="Team Member">
+                                <img src="assets/img/person/person-m-3.webp" class="img-fluid" alt="Team Member">
                                 <div class="social-overlay">
                                     <div class="social-links">
                                         <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -81,7 +81,7 @@
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="team-card">
                             <div class="member-img">
-                                <img src="assets/img/person/person-f-7.webp" class="img-fluid" alt="Team Member">
+                                <img src="assets/img/person/person-f-4.webp" class="img-fluid" alt="Team Member">
                                 <div class="social-overlay">
                                     <div class="social-links">
                                         <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -130,9 +130,9 @@
         <section id="why-us" class="why-us section light-background">
             <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Why Us</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <h2>Why Choose Us?</h2>
             </div>
+
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row g-5">
@@ -142,10 +142,10 @@
                             <div class="badge-wrapper">
                                 <span class="section-badge"><i class="bi bi-stars"></i> Our Difference</span>
                             </div>
-                            <h2>Transform Your Vision Into Digital Excellence</h2>
-                            <p class="description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum.</p>
+                            <h2>Transform Your Vision Into Architectural Excellence</h2>
+                            <p class="description">We don't just build structures, we create landmarks. We ensure 
+                                your project stands the test of time and environment.
+                            </p>
                             <!-- Stat Cards -->
                             <div class="stat-cards">
                                 <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
@@ -153,27 +153,27 @@
                                         <span class="purecounter" data-purecounter-start="0"
                                             data-purecounter-end="180" data-purecounter-duration="2">180</span>+
                                     </div>
-                                    <div class="stat-text">Successful Campaigns</div>
+                                    <div class="stat-text">Completed Projects</div>
                                 </div>
                                 <div class="stat-card" data-aos="zoom-in" data-aos-delay="350">
                                     <div class="stat-value">
                                         <span class="purecounter" data-purecounter-start="0"
                                             data-purecounter-end="95" data-purecounter-duration="2">95</span>%
                                     </div>
-                                    <div class="stat-text">Customer Satisfaction</div>
+                                    <div class="stat-text">Client Satisfaction</div>
                                 </div>
                                 <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
                                     <div class="stat-value">
                                         <span class="purecounter" data-purecounter-start="0"
-                                            data-purecounter-end="320" data-purecounter-duration="2">320</span>%
+                                            data-purecounter-end="300" data-purecounter-duration="2">300</span>%
                                     </div>
                                     <div class="stat-text">Growth Achieved</div>
                                 </div>
                             </div>
                             <!-- Action Buttons -->
                             <div class="action-buttons">
-                                <a href="#" class="btn-main">Get Started Today</a>
-                                <a href="#" class="btn-outline">Explore Portfolio</a>
+                                <a href="{{ url('/contact') }}" class="btn-main">Get Started Today</a>
+                                <a href="{{ url('/project') }}" class="btn-outline">Explore Projects</a>
                             </div>
                         </div>
                     </div>
@@ -182,14 +182,15 @@
                     <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
                         <div class="features-grid">
                             <!-- Feature Box 1 -->
-                            <div class="feature-box highlight" data-aos="fade-up" data-aos-delay="250">
+                            <div class="feature-box" data-aos="fade-up" data-aos-delay="250">
                                 <div class="feature-icon">
                                     <i class="bi bi-rocket-takeoff-fill"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h4>Rapid Implementation</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt ut labore.</p>
+                                    <h4>Rapid & Precise Execution</h4>
+                                    <p>We value your time. Our streamlined project management ensures construction stays on 
+                                        schedule without compromising structural integrity.
+                                    </p>
                                     <a href="#" class="feature-link">Discover How <i class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
@@ -199,9 +200,10 @@
                                     <i class="bi bi-bar-chart-line-fill"></i>
                                 </div>
                                 <div class="feature-content">
-                                    <h4>Analytics-First Approach</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
-                                        mollit.</p>
+                                    <h4>Engineering-First Approach</h4>
+                                    <p>Every design is backed by rigorous technical analysis, ensuring safety, sustainability, 
+                                        and efficiency in every square meter.
+                                    </p>
                                     <a href="#" class="feature-link">Discover How <i class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
@@ -212,8 +214,9 @@
                                 </div>
                                 <div class="feature-content">
                                     <h4>Award-Winning Team</h4>
-                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                        fugiat nulla.</p>
+                                    <p>Our architects specialize in modern-tropical aesthetics, creating spaces that are visually 
+                                        stunning and functionally superior.
+                                    </p>
                                     <a href="#" class="feature-link">Discover How <i class="bi bi-chevron-right"></i></a>
                                 </div>
                             </div>
@@ -221,7 +224,7 @@
                         
                         <!-- Process Timeline -->
                         <div class="process-timeline" data-aos="fade-up" data-aos-delay="400">
-                            <h5 class="timeline-title"><i class="bi bi-diagram-3-fill"></i> Our Proven Methodology
+                            <h5 class="timeline-title"><i class="bi bi-diagram-3-fill"></i> Our Methodology
                             </h5>
                             <div class="timeline-steps">
                                 <div class="timeline-step">
@@ -247,41 +250,33 @@
                                         <span>Developing solution</span>
                                     </div>
                                 </div>
-                                <div class="timeline-connector"></div>
-                                <div class="timeline-step">
-                                    <div class="step-marker">4</div>
-                                    <div class="step-info">
-                                        <strong>Refine</strong>
-                                        <span>Iterating results</span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
                         <!-- Capabilities Section -->
                         <div class="capabilities-section" data-aos="fade-up" data-aos-delay="450">
-                            <h5 class="capabilities-heading">What We Bring to the Table</h5>
+                            <h5 class="capabilities-heading">Our Vision, Mission, and Motto</h5>
                             <div class="capabilities-grid">
                                 <div class="capability-card">
                                     <div class="capability-icon">
-                                        <i class="bi bi-bullseye"></i>
+                                        <i class="fa-solid fa-bullseye"></i>
                                     </div>
-                                    <h6>Strategic Consulting</h6>
-                                    <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+                                    <h6>Vision</h6>
+                                    <p>To be the lead architecture and construction firm in the world.</p>
                                 </div>
                                 <div class="capability-card">
                                     <div class="capability-icon">
-                                        <i class="bi bi-code-slash"></i>
+                                        <i class="fa-solid fa-certificate"></i>
                                     </div>
-                                    <h6>Tailored Development</h6>
-                                    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+                                    <h6>Mission</h6>
+                                    <p>Excellence in craft, Sustainable innovation, and Client integrity</p>
                                 </div>
                                 <div class="capability-card">
                                     <div class="capability-icon">
-                                        <i class="bi bi-arrow-repeat"></i>
+                                        <i class="fa-solid fa-scale-balanced"></i>
                                     </div>
-                                    <h6>Continuous Enhancement</h6>
-                                    <p>Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis voluptatibus  maiores.</p>
+                                    <h6>Motto</h6>
+                                    <p>"Precision in Design, Excellence in Flow."</p>
                                 </div>
                             </div>
                         </div>
@@ -295,8 +290,8 @@
             <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Testimonials</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
+
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
@@ -304,7 +299,7 @@
                     <div class="col-lg-4" data-aos="fade-right" data-aos-delay="150">
                         <div class="testimonials-sidebar">
                             <div class="avatar-stack">
-                                <img src="assets/img/person/person-m-3.webp" alt="Happy Client" class="avatar" loading="lazy">
+                                <img src="assets/img/person/person-m-11.webp" alt="Happy Client" class="avatar" loading="lazy">
                                 <img src="assets/img/person/person-f-7.webp" alt="Happy Client" class="avatar" loading="lazy">
                                 <img src="assets/img/person/person-m-9.webp" alt="Happy Client" class="avatar" loading="lazy">
                                 <img src="assets/img/person/person-f-4.webp" alt="Happy Client" class="avatar" loading="lazy">
@@ -312,8 +307,10 @@
                             </div>
                             <div class="sidebar-content">
                                 <span class="satisfied-badge"><i class="bi bi-heart-fill"></i> Satisfied Clients</span>
-                                <h3>Discover What Our Clients Say About Us</h3>
-                                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                                <h3>What Our Clients Say About Archiflow</h3>
+                                <p>Real stories from those who have trusted us. We take pride delivering 
+                                    architecture excellence that exceeds expectations across the world.
+                                </p>
                                 <a href="#" class="btn-view-all">View All Reviews <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
@@ -357,14 +354,14 @@
                                             </div>
                                             <span class="quote-mark"><i class="bi bi-quote"></i></span>
                                         </div>
-                                        <p class="testimonial-text">Nemo enim ipsam voluptatem quia voluptas sit
-                                            aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui
-                                            ratione voluptatem sequi nesciunt.</p>
+                                        <p class="testimonial-text">The team's 'engineering-first' approach gave us the confidence we 
+                                            needed for our commercial development in Denpasar.
+                                        </p>
                                         <div class="author-info">
-                                            <img src="assets/img/person/person-f-2.webp" alt="Client" class="author-img" loading="lazy">
+                                            <img src="assets/img/person/person-f-14.webp" alt="Client" class="author-img" loading="lazy">
                                             <div class="author-details">
                                                 <h5>Sophia Anderson</h5>
-                                                <span>Marketing Director</span>
+                                                <span>Real Estate Developer</span>
                                             </div>
                                         </div>
                                     </div>
@@ -382,14 +379,14 @@
                                             </div>
                                             <span class="quote-mark"><i class="bi bi-quote"></i></span>
                                         </div>
-                                        <p class="testimonial-text">Temporibus autem quibusdam et aut officiis debitis
-                                            aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
-                                            molestiae non recusandae.</p>
+                                        <p class="testimonial-text">Archiflow transformed our vision for a clifftop villa in Uluwatu 
+                                            into a stunning reality. They're really world-class firm.
+                                        </p>
                                         <div class="author-info">
                                             <img src="assets/img/person/person-m-5.webp" alt="Client" class="author-img" loading="lazy">
                                             <div class="author-details">
                                                 <h5>Marcus Webb</h5>
-                                                <span>Tech Lead</span>
+                                                <span>Private Villa Owner</span>
                                             </div>
                                         </div>
                                     </div>
@@ -407,64 +404,14 @@
                                             </div>
                                             <span class="quote-mark"><i class="bi bi-quote"></i></span>
                                         </div>
-                                        <p class="testimonial-text">Itaque earum rerum hic tenetur a sapiente delectus
-                                            ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-                                            doloribus asperiores repellat.</p>
+                                        <p class="testimonial-text">Developing a boutique resort in Bali has many challenges, but 
+                                            professional consulting  made entire process stress-free.
+                                        </p>
                                         <div class="author-info">
                                             <img src="assets/img/person/person-f-9.webp" alt="Client" class="author-img" loading="lazy">
                                             <div class="author-details">
                                                 <h5>Elena Rodriguez</h5>
-                                                <span>Startup Founder</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Card 4 -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="card-top">
-                                            <div class="stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>
-                                            <span class="quote-mark"><i class="bi bi-quote"></i></span>
-                                        </div>
-                                        <p class="testimonial-text">Nam libero tempore cum soluta nobis est eligendi
-                                            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus
-                                            omnis voluptas assumenda.</p>
-                                        <div class="author-info">
-                                            <img src="assets/img/person/person-m-11.webp" alt="Client" class="author-img" loading="lazy">
-                                            <div class="author-details">
-                                                <h5>James Mitchell</h5>
-                                                <span>Product Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Testimonial Card 5 -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="card-top">
-                                            <div class="stars">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>
-                                            <span class="quote-mark"><i class="bi bi-quote"></i></span>
-                                        </div>
-                                        <p class="testimonial-text">Ut enim ad minima veniam quis nostrum
-                                            exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea
-                                            commodi consequatur reprehenderit.</p>
-                                        <div class="author-info">
-                                            <img src="assets/img/person/person-f-14.webp" alt="Client" class="author-img" loading="lazy">
-                                            <div class="author-details">
-                                                <h5>Olivia Chen</h5>
-                                                <span>Operations Manager</span>
+                                                <span>Founder Resorts Group</span>
                                             </div>
                                         </div>
                                     </div>

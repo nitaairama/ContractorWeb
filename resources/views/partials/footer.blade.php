@@ -7,14 +7,13 @@
                 <a href="{{ url('/') }}" class="logo d-flex align-items-center mb-4">
                     <span class="sitename">Archiflow</span><span style="color: #1ea0af">.</span>
                 </a>
-                <p>Transform visions into structural reality.
+                <p>Transform visions into reality.
                 </p>
                 <div class="social-links d-flex mt-4">
                     <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
                     <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                     <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                     <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-                    <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
                 </div>
             </div>
             <!-- Services -->

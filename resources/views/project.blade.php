@@ -12,17 +12,22 @@
             <div class="container section-title" data-aos="fade-up">
                 <h2>Projects</h2>
             </div>
+
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="isotope-layout" data-default-filter="*" data-layout="fitRows" data-sort="original-order">
                     <!-- Filter -->
                     <div class="filters-wrapper" data-aos="fade-up" data-aos-delay="100">
                         <ul class="portfolio-filters isotope-filters">
-                            <li data-filter="*" class="filter-active">All Projects</li>
-                            <li data-filter=".filter-building">Building</li>
-                            <li data-filter=".filter-structure">Structure</li>
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-residential">Residential</li>
+                            <li data-filter=".filter-commercial">Commercial</li>
+                            <li data-filter=".filter-renovation">Renovation</li>
+                            <li data-filter=".filter-infrastructure">Infrastructure</li>
+                            <li data-filter=".filter-management">Management</li>
                         </ul>
                     </div>
+                    
                     <!-- Project Cards -->
                     <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                         @forelse($data as $item)
@@ -91,10 +96,6 @@
                                 </div>
                             </div>
                         @empty
-                            <!-- Empty State -->
-                            <div class="col-12 text-center">
-                                <p>No projects found</p>
-                            </div>
                         @endforelse
                     </div>
                 </div>

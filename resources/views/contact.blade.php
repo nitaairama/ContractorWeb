@@ -12,6 +12,7 @@
             <div class="container section-title" data-aos="fade-up">
                 <h2>Contact Info</h2>
             </div>
+
             <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <!-- Contact Info -->
@@ -24,10 +25,9 @@
                                     <i class="bi bi-chat-dots-fill"></i>
                                     Get In Touch
                                 </span>
-                                <h3>Let's Bring Your Vision to Life</h3>
+                                <h3>Bring Your Vision to Life</h3>
                                 <p>
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores.
+                                    We are ready to transform your concepts across Bali.
                                 </p>
                             </div>
                             <!-- Contact Methods -->
@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="method-details">
                                         <span class="method-label">Email Us</span>
-                                        <a href="mailto:support@example.com">support@example.com</a>
+                                        <a href="mailto:contact@archiflow.com">contact@archiflow.com</a>
                                     </div>
                                 </div>
                                 <!-- Method Item 2 -->
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="method-details">
                                         <span class="method-label">Call Us</span>
-                                        <a href="tel:+15558901234">+1 (555) 890-1234</a>
+                                        <a href="tel:+62361234568">+62 361 234 568</a>
                                     </div>
                                 </div>
                                 <!-- Method Item 3 -->
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="method-details">
                                         <span class="method-label">Visit Us</span>
-                                        <span>1847 Oak Avenue, Portland, OR 97201</span>
+                                        <span>Jl. Raya Uluwatu No. 10, Bali 80361, Indonesia </span>
                                     </div>
                                 </div>
                             </div>
@@ -75,14 +75,13 @@
                                     <span class="stat-text">Support</span>
                                 </div>
                                 <div class="stat-item">
-                                    <span class="stat-number">3.2k</span>
+                                    <span class="stat-number">3.5k</span>
                                     <span class="stat-text">Projects</span>
                                 </div>
                             </div>
 
                             <!-- Social Connect -->
-                            <div class="social-connect">
-                                <span>Follow Us</span>
+                            <div class="social-connect justify-content-center">
                                 <div class="social-icons">
                                     <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                                     <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>

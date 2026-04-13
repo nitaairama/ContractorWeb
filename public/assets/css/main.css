@@ -2584,7 +2584,7 @@ section,
 }
 
 .why-us .capabilities-section .capabilities-grid .capability-card {
-  background: color-mix(in srgb, var(--surface-color), var(--background-color) 50%);
+  background: var(--surface-color);
   padding: 24px;
   border-radius: 12px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);

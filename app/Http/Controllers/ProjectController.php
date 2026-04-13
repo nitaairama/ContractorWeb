@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -8,10 +7,10 @@ use Illuminate\Support\Facades\File;
 
 class ProjectController extends Controller
 {
-    // Halaman publik
+    // Public Pages
     public function index()
     {
-        // Menampilkan proyek terbaru di halaman home
+        // Display 3 latest projects on the homepage
         $data = Project::latest()->take(3)->get();
         return view('home', compact('data'));
     }
@@ -38,7 +37,7 @@ class ProjectController extends Controller
         return view('contact');
     }
 
-    // Halaman admin
+    // Admin Pages
     public function adminIndex()
     {
         $data = Project::latest()->get();
@@ -52,7 +51,7 @@ class ProjectController extends Controller
 
     public function store(Request $request)
     {
-        // Validasi input
+        // Input Validation
         $request->validate([
             'title'       => 'required|max:255',
             'category'    => 'required',
@@ -68,12 +67,12 @@ class ProjectController extends Controller
             'image.max' => 'Image size must be less than 2MB',
         ]);
 
-        // Proses upload gambar
+        // Handle image upload
         $file = $request->file('image');
         $filename = time() . '_' . $file->getClientOriginalName();
         $file->move(public_path('images'), $filename);
 
-        // Simpan ke database
+        // Stored data in database
         Project::create([
             'title'       => $request->title,
             'category'    => $request->category,
@@ -98,7 +97,7 @@ class ProjectController extends Controller
     {
         $data = Project::findOrFail($id);
 
-        // Validation
+        //  Input Validation
         $request->validate([
             'title'       => 'required|max:255',
             'category'    => 'required|string',
@@ -114,7 +113,7 @@ class ProjectController extends Controller
             'image.max' => 'Image size must be less than 2MB',
         ]);
 
-        // Handle image baru jika ada
+        // Handle new image upload if exists
         if ($request->hasFile('image')) {
 
         // Hapus gambar lama
@@ -129,7 +128,7 @@ class ProjectController extends Controller
         $data->image = $filename;
     }
 
-    // Update data
+    // Update Data
     $data->update([
         'title'       => $request->title,
         'category'    => $request->category,
@@ -147,7 +146,7 @@ class ProjectController extends Controller
     {
         $data = Project::findOrFail($id);
 
-        // Hapus file gambar fisik
+        // Delete old image if exists
         if (File::exists(public_path('images/' . $data->image))) {
             File::delete(public_path('images/' . $data->image));
         }

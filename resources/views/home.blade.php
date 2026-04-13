@@ -98,10 +98,9 @@
             <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
-                <p>Delivering top-tier construction solutions tailored to meet modern architectural</p>
             </div>
-
-            <!-- Service Card -->
+            
+            <!-- Container -->
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="row g-4">
                     <!-- Service Card 1 -->
@@ -227,7 +226,6 @@
             <!-- Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Projects</h2>
-                <p>A showcase of our commitment to excellence, built with precision and modern design</p>
             </div>
 
             <!-- Container -->
@@ -273,7 +271,7 @@
                                                 <!-- Location Tag -->
                                                 <span
                                                     class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
-                                                    style="background: #0ea5e9; color: white;">
+                                                    style="background: #1ea0af; color: white;">
                                                     <i class="bi bi-geo-alt"></i>
                                                     {{ $item->location ?? '-' }}
                                                 </span>
@@ -287,7 +285,7 @@
                                                     <!-- Ongoing -->
                                                     <span
                                                         class="d-inline-flex align-items-center gap-1 px-3 py-2 rounded-5"
-                                                        style="background: rgba(14,165,233,0.1); color: #0ea5e9;">
+                                                        style="background: rgba(30, 160, 175, 0.1); color: #1ea0af;">
                                                         <i class="bi bi-hourglass-split"></i>
                                                         Ongoing
                                                     </span>
@@ -298,10 +296,6 @@
                                 </div>
                             </div>
                         @empty
-                            <!-- Empty State -->
-                            <div class="col-12 text-center">
-                                <p>No projects found</p>
-                            </div>
                         @endforelse
                     </div>
                 </div>

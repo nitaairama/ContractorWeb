@@ -28,6 +28,7 @@
         <div class="container section-title">
             <h2>Edit Project</h2>
         </div>
+
         <!-- Edit Form -->
         <div class="form-card">
             <form id="projectForm" action="/admin/update/{{ $data->id }}" method="POST"
@@ -105,12 +106,11 @@
                         @enderror
                         <!-- Preview Image -->
                         <div class="mt-3">
-                            <img id="previewImage" src="{{ asset('images/' . $data->image) }}"
-                                class="img-fluid rounded" style="max-height:200px;">
+                            <img id="previewImage" src="{{ asset('images/' . $data->image) }}"class="img-fluid rounded" style="max-height:200px;">
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-warning btn-submit mt-4">Update Project</button>
+                <button class="btn btn-submit mt-4">Update Project</button>
             </form>
         </div>
     </main>

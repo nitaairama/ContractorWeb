@@ -1,4 +1,4 @@
-<!-- Vendor JS Files -->
+<!-- Vendor Files -->
 <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
 <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
@@ -11,11 +11,11 @@
 <!-- Sweetalert -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<!-- Main JS File -->
+<!-- JS File -->
 <script src="{{ asset('assets/js/main.js') }}"></script>
 
 <script>
-    // Disable Scroll Restore
+    // Disable scroll restore
     if ('scrollRestoration' in history) {
         history.scrollRestoration = 'manual';
     }
@@ -37,7 +37,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
 
-                // Submit Delete Form
+                // Submit delete form
                 document.getElementById('delete-form-' + id).submit();
 
                 // Loading State
@@ -71,14 +71,14 @@
         }
     });
 
-    // Remove Validation Error on Input
+    // Remove validation error on input
     document.querySelectorAll('input, textarea').forEach(input => {
         input.addEventListener('input', function () {
 
-            // hapus class error (bootstrap)
+            // Delete invalid class
             this.classList.remove('is-invalid');
 
-            // hapus pesan error
+            // Delete error message
             let error = this.parentElement.querySelector('.text-danger, .invalid-feedback');
             if (error) {
                 error.style.display = 'none';

@@ -30,6 +30,7 @@
             <div class="container section-title">
                 <h2>Manage Projects</h2>
             </div>
+            
             <!-- Container -->
             <div class="container">
                 <!-- Project Cards -->
@@ -92,7 +93,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Scroll Top -->
@@ -108,7 +108,7 @@
         @if (session('success'))
             Swal.fire({
                 icon: 'success',
-                title: 'Berhasil!',
+                title: 'Success!',
                 text: '{{ session('success') }}',
                 confirmButtonColor: '#0ea5e9'
             });
